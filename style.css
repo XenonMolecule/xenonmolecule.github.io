@@ -73,3 +73,11 @@ body{
     margin-top:10px;
     font-family:Age;
 }
+
+#mouseParticles{
+    z-index:100;
+    position:absolute;
+    background-color:rgba(255,255,255,0.0);
+    margin-top:60px;
+    margin-left:-10px;
+}
