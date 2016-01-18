@@ -9,8 +9,3 @@ $(window).resize(function(){
     $("#mouseParticles").attr("height",height);
     $("#mouseParticles").attr("width", width);
 });
-
-//initialize the canvas
-var canvas = $("<canvas height=height width=width id='mouseParticles'></canvas>");
-$(".header").before(canvas);
-$(window).resize();
