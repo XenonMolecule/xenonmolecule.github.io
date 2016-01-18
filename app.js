@@ -56,7 +56,7 @@ function drawParticle(){
 }
 //delete old particles
 function deleteParticle(x,y){
-    if(mouseStillTime<10){
+    if(mouseStillTime<20){
         context.clearRect(x-8,y-8,16,16);
     }
 }
