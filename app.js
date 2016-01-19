@@ -7,7 +7,7 @@ var lastEvent;
 var mouseDown;
 var mouseStillTime = 0;
 var onCanvas = true;
-var color = $(".selected").css("background-color");
+var color = $(".selectedColor").css("background-color");
 
 $(window).resize(function(){
     height = window.innerHeight-78;
@@ -123,12 +123,12 @@ $(".exitPaint").click(function(e){
 $(".colorPallet ul li").each(function(){
    $(this).click(function(){
        $(".colorPallet ul li").each(function(){
-            if($(this).hasClass("selected")){
-                $(this).removeClass("selected");
+            if($(this).hasClass("selectedColor")){
+                $(this).removeClass("selectedColor");
             }
        });
-       $(this).addClass("selected");
-       color = $(".selected").css("background-color");
+       $(this).addClass("selectedColor");
+       color = $(".selectedColor").css("background-color");
    });
 });
 

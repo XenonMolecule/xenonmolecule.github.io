@@ -118,7 +118,7 @@ body{
     background-color:green;
 }
 
-.selected{
+.selectedColor{
     height:36px !important;
     width:36px !important;
     border:7px solid #12121b;
