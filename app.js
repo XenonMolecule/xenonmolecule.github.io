@@ -8,19 +8,27 @@ var mouseDown;
 var mouseStillTime = 0;
 var onCanvas = true;
 var color = $(".selectedColor").css("background-color");
+var addColorOffset = 8;
 
-$(window).resize(function(){
-    height = window.innerHeight-78;
-    width = window.innerWidth+8;
-    $("canvas"[0]).attr("id","mouseParticles");
-    $("canvas"[1]).attr("id","paintCanvas");
-    $("#mouseParticles").attr("height",height);
-    $("#paintCanvas").attr("height",height);
-    $("#mouseParticles").attr("width", width);
-    $("#paintCanvas").attr("width", width);
-    setTimeout($(".exitPaint").css("margin-left",(window.innerWidth-55)),100);
-    setTimeout($(".drawIcon").css("margin-left",(window.innerWidth-65)),100);
+$(document).ready(function(){
+    $(window).on("resize",function(){
+        height = (window.innerHeight)-78;
+        width = (window.innerWidth)+8;
+        /*
+        $("canvas"[0]).attr("id","mouseParticles");
+        $("canvas"[1]).attr("id","paintCanvas");
+        */
+        $("#mouseParticles").attr("height",height);
+        $("#paintCanvas").attr("height",height);
+        $("#mouseParticles").attr("width", width);
+        $("#mouseParticles").attr("margin-top","60px");
+        $("#paintCanvas").attr("width", width);
+        $("#paintCanvas").attr("margin-top","60px");
+        $(".exitPaint").css("margin-left",(window.innerWidth-55));
+        $(".drawIcon").css("margin-left",(window.innerWidth-65));
+    });
 });
+
 
 function initCanvas(){
     height = window.innerHeight-78;
@@ -92,10 +100,10 @@ $("#junk").detach();
 //Solution: Add a vandalize button with a color selection pallet
 
 //init draw icon
-setTimeout($(".drawIcon").css("margin-left",(window.innerWidth-65)),100);
+$(".drawIcon").css("margin-left",(window.innerWidth-65));
 
 //prepare x button
-setTimeout($(".exitPaint").css("margin-left",(window.innerWidth-55)),100);
+$(".exitPaint").css("margin-left",(window.innerWidth-55));
 
 //init paint canvas
 var paintCanvas = $("<canvas></canvas>");
@@ -147,5 +155,32 @@ $("#paintCanvas").mousedown(function(e){
         paintContext.stroke();
         lastEvent = e;
     }
-})
+});
 
+//Problem:The Color Selector doesn't open and close when + clicked
+//Solution: Add functionality to the + button and color selection
+
+//make the selector appear and disappear
+$(".addColor").click(function(){
+    addColorOffset=38;
+    $(".colorPallet").children().each(function(){
+        addColorOffset+=55;
+    });
+    addColorOffset-=150;
+    $(".colorSelector").css("margin-left",addColorOffset);
+    if(($(".colorSelector").prop("hidden"))){
+        $(".colorSelector").attr("hidden",false);
+    } else{
+        $(".colorSelector").attr("hidden",true);
+    }
+});
+
+//make the color display what is shown by the sliders
+$(".colorSlider").each(function(){
+   $(this).on("change",function(){
+       //code from HERE now
+   });
+});
+
+
+//append the color

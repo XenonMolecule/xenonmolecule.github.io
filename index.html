@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Xenon Molecule</title>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -20,7 +20,30 @@
                 <li class="red selectedColor"></li>
                 <li class="blue"></li>
                 <li class="green"></li>
+                <div class="addColor">
+                    <p>+</p>
+                </div>
             </ul>
+            <div class="colorSelector" hidden>
+                <div class = "displayColor"></div>
+                <br>
+                <span>
+                    <label for="red">Red</label>
+                    <input class="colorSlider" id="red" name="red" type="range" min=0 max=255 value=0>
+                </span>
+                <br>
+                <span>
+                    <label for="green">Green</label>
+                    <input class="colorSlider" id="green" name="red" type="range" min=0 max=255 value=0>
+                </span>
+                <br>
+                <span>
+                    <label for="blue">Blue</label>
+                    <input class="colorSlider" id="blue" name="red" type="range" min=0 max=255 value=0>
+                </span>
+                <br>
+                <button>Add Color</button>
+            </div>
             <a href="https://www.google.com"><div class="exitPaint">
                 <h1>X</h1>
             </div></a>
