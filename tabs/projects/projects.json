@@ -1,0 +1,12 @@
+{
+    "Base95":{
+        "thumbnail":"../../resources/Base95Logo.jpg",
+        "link":"http://xenonmolecule.github.io/BASE95/",
+        "description":"An online database using google drive"
+    },
+    "Ter0: The Awakening":{
+        "thumbnail":"../../resources/ter0.png",
+        "link":"http://xenonmolecule.github.io/codeDayGame",
+        "description":"An adventure rpg game built in javascript"
+    }
+}

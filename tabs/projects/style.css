@@ -1,0 +1,36 @@
+.projects{
+    text-align:center;
+    font-family:Age;
+}
+
+#project{
+    background-color:#FFF;
+    border-radius:25px;
+    display:inline-block;
+    text-align: left;
+    color:#12121b;
+    height:100px;
+    width:50vw;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+#project img{
+    width:75px;
+    border-radius:15px;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+#project a{
+    position:absolute;
+    margin-left: 20px;
+    text-decoration:underline;
+}
+
+#description{
+    position:absolute;
+    font-size: 18px;
+    margin-top:-25px;
+    margin-left:105px;
+}
