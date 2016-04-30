@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About - Xenon Molecule</title>
+        <title>Projects - Xenon Molecule</title>
+        <link rel="stylesheet" type="text/css" href="../../resources/plugins/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../../resources/plugins/slick/slick-theme.css"/>
         <link rel="stylesheet" type="text/css" href="https://xenonmolecule.github.io/style.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <canvas id="background" hidden></canvas>
         <div class = "header">
             <ul>
                 <li><a href="../../index.html"><img src="http://xenonmolecule.github.io/resources/XenonPeriodic.png" title="Xenon" alt="Home"><a></li>
@@ -16,11 +19,23 @@
             </ul>
         </div>
         <br>
+        <div class="lightbox">
+            <div class="carousel">
+                <div><img src="../../resources/Base95Logo.jpg"></div>
+                <div><img src="../../resources/Base95Logo.jpg"></div>
+            </div>
+            <a href="http://xenonmolecule.github.io/BASE95/"><p>BASE95</p></a>
+            <p id="longerDesc">An online database API using google drive.  Documentation provided at the site above.  Submitted to HackBCA III</p>
+            <a href="https://github.com/XenonMolecule/BASE95"><img id="github" src="../../resources/github.png"></a>
+        </div>
         <div class = "projects">
             <!--DO NOT DELETE THIS!!! THE PROJECTS ARE PASTED HERE-->
         </div>
+        
     </body>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="../../resources/plugins/slick/slick.min.js"></script>
     <script type="text/javascript" src="http://xenonmolecule.github.io/main.js"></script>
     <script type="text/javascript" src="app.js"></script>
+
 </html>

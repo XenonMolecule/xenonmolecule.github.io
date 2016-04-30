@@ -6,4 +6,11 @@ var dataRequest = $.getJSON("projects.json").done(function(data){
         creation = $(creation);
         $(".projects").append(creation);
     }
-})
+});
+
+$(document).ready(function(){
+  $('.carousel').slick({
+    autoplay:true,
+    dots:true
+  });
+});

@@ -13,6 +13,7 @@
     width:50vw;
     font-size:24px;
     margin-bottom:10px;
+    cursor:pointer;
 }
 
 #project img{
@@ -33,4 +34,59 @@
     font-size: 18px;
     margin-top:-25px;
     margin-left:105px;
+}
+
+#background{
+    position:absolute;
+    width:102vw;
+    height:100vh;
+    margin-left:-2vw;
+    background-color:rgba(0,0,0,0.85);
+    z-index: 1000;
+}
+
+.lightbox{
+    background-color: #FFF;
+    position:absolute;
+    z-index:1500;
+    width:70%;
+    height:83vh;
+    border-radius:25px;
+    text-align:center;
+    margin-left:15vw;
+    font-size:26px;
+    font-family: Age;
+}
+
+.lightbox img{
+    border-radius:15px;
+    height:50%;
+    margin-top:20px;
+}
+
+.lightbox a{
+    text-decoration: underline;
+}
+
+#longerDesc{
+    width:80%;
+    margin-left:10%;
+    font-size: 24px
+}
+
+#github{
+    width:5vw;
+    height:5vw;
+    margin-top:-10px;
+}
+
+.carousel div{
+    width:70vw;
+    margin-left:0px;
+    text-align: center;
+}
+
+.carousel div img{
+    margin-left: auto;
+    margin-right:auto;
 }
