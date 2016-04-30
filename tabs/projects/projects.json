@@ -2,11 +2,21 @@
     "Base95":{
         "thumbnail":"../../resources/Base95Logo.jpg",
         "link":"http://xenonmolecule.github.io/BASE95/",
-        "description":"An online database using google drive"
+        "description":"An online database using google drive",
+        "lightbox":{
+            "github":"https://github.com/XenonMolecule/BASE95",
+            "longDesc":"An online database API using google drive.  Documentation provided at the site above.  Submitted to HackBCA III",
+            "carousel":["../../resources/Base95Logo.jpg","../../resources/b95IMG2.jpg","../../resources/b95IMG.jpg"]
+        }
     },
     "Ter0: The Awakening":{
         "thumbnail":"../../resources/ter0.png",
         "link":"http://xenonmolecule.github.io/codeDayGame",
-        "description":"An adventure rpg game built in javascript"
+        "description":"An adventure rpg game built in javascript",
+        "lightbox":{
+            "github":"https://github.com/XenonMolecule/codeDayGame",
+            "longDesc":"An adventure rpg game built in javascript and HTML5.  Play as Ter0, and hack your way through the game.  Submitted to Code Day Winter 2016",
+            "carousel":["../../resources/ter0.png","../../resources/ter0Gameplay.png","../../resources/ter0Gameplay2.png"]
+        }
     }
 }
