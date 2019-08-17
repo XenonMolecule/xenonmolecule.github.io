@@ -1,6 +1,6 @@
 // JavaScript File
 var info;
-var dataRequest = $.getJSON("projects.json").done(function(data){
+var dataRequest = $.getJSON("projects.json").done(function(data){ // https://raw.githubusercontent.com/XenonMolecule/xenonmolecule.github.io/master/tabs/projects/projects.json
     for(var label in data){
         var creation = '<div id="project"><img src="'+data[label].thumbnail+'"><a href="'+data[label].link+'"><p>'+label+'</p></a><p id="description">'+data[label].description+'</p></div>'
         creation = $(creation);
