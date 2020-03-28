@@ -8,19 +8,19 @@ const Header = () => (
   <Navbar bg={'dark'} variant={'dark'} className={'justify-content-end'}>
     <Nav className={'justify-content-end'}>
       <Nav.Item>
-        <Link className={'nav-link'} to={'/page-2/'}>About</Link>
+        <Link className={'nav-link'} to={'/wip/'}>About</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link className={'nav-link'} to={'/page-2/'}>Projects</Link>
+        <Link className={'nav-link'} to={'/wip/'}>Projects</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link className={'nav-link'} to={'/page-2/'}>Experience</Link>
+        <Link className={'nav-link'} to={'/wip/'}>Experience</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link className={'nav-link'} to={'/page-2/'}>Resume</Link>
+        <Link className={'nav-link'} to={'/wip/'}>Resume</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link className={'nav-link'} to={'/page-2/'}>Contact</Link>
+        <Link className={'nav-link'} to={'/wip/'}>Contact</Link>
       </Nav.Item>
     </Nav>
   </Navbar>

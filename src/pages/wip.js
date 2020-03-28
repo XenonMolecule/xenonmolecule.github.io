@@ -10,20 +10,14 @@ import Row from "react-bootstrap/Row"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
-const IndexPage = () => (
+const WipPAge = () => (
   <>
     <Header/>
-    <SEO title="Home" />
+    <SEO title="Work in Progress" />
     <Container>
       <Container className={'center-box'}>
         <Row className={'justify-content-center'}>
-          <h1 className={'big-header'}>Michael Ryan</h1>
-        </Row>
-        <Row className={'justify-content-center'} style={{'marginTop':'-25px'}}>
-          <p className={'big-subheader'}>Computer Science</p>
-        </Row>
-        <Row className={'justify-content-center'} style={{'marginTop':'-25px'}}>
-          <p className={'big-subheader'}>Georgia Tech</p>
+          <p className={'big-subheader'}>In Progress...</p>
         </Row>
       </Container>
     </Container>
@@ -32,4 +26,4 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage
+export default WipPAge
