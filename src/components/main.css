@@ -22,3 +22,22 @@ body {
     background-color: #121212;
     background-position: center center;
 }
+
+.big-header {
+    color: whitesmoke;
+    font-size:128px;
+    font-family: "American Typewriter";
+}
+
+.big-subheader {
+    color: darkgray;
+    font-size:54px;
+    font-family: "American Typewriter";
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    margin-left:-10px;
+}
