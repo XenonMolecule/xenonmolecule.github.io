@@ -4,7 +4,7 @@ import React from "react"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <Navbar bg={'dark'} variant={'dark'} className={'justify-content-end'}>
     <Nav className={'justify-content-end'}>
       <Nav.Item>
