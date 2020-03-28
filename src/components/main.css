@@ -35,6 +35,48 @@ body {
     font-family: "American Typewriter";
 }
 
+@media(max-width : 1000px) {
+    .big-header {
+        font-size: 96px;
+    }
+
+    .big-subheader {
+        font-size: 36px;
+    }
+}
+
+@media(max-width : 775px) {
+    .big-header {
+        font-size: 64px;
+    }
+
+    .big-subheader {
+        font-size: 36px;
+    }
+}
+
+@media(max-width : 435px) {
+    .big-header {
+        font-size: 54px;
+    }
+
+    .big-subheader {
+        margin-top:5px;
+        font-size: 24px;
+    }
+}
+
+@media(max-width : 355px) {
+    .big-header {
+        font-size: 44px;
+    }
+
+    .big-subheader {
+        margin-top:5px;
+        font-size: 24px;
+    }
+}
+
 .center-box {
     position: absolute;
     top: 50%;
